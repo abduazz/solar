@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelioCore Energy — Премиальные солнечные установки</title>
+  <meta
+    name="description"
+    content="HelioCore Energy — проектирование и установка премиальных солнечных электростанций для дома и бизнеса: сетевые, гибридные и автономные решения."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hc-header" id="top">
+    <div class="hc-shell hc-header-inner">
+      <a href="#top" class="hc-logo">HelioCore</a>
+
+      <button
+        class="hc-burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav class="hc-nav" id="mainNav" aria-label="Главное меню">
+        <a href="#services">Услуги</a>
+        <a href="#solutions">Решения</a>
+        <a href="#locations">Объекты</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#projects">Проекты</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+        <a href="#contact" class="hc-btn hc-btn--primary">Рассчитать проект</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hc-section hc-hero">
+      <div class="hc-shell hc-hero-grid">
+        <div class="hc-hero-main">
+          <p class="hc-kicker">Инженерия солнечных систем</p>
+          <h1>Премиальные солнечные электростанции под ключ</h1>
+          <p class="hc-hero-text">
+            Проектируем, монтируем и обслуживаем солнечные станции для домов, бизнеса и
+            промышленных объектов. Лицензированный подрядчик с гарантией до 30 лет.
+          </p>
+          <div class="hc-hero-actions">
+            <a href="#contact" class="hc-btn hc-btn--primary">Рассчитать проект</a>
+            <a href="#projects" class="hc-btn hc-btn--ghost">Смотреть проекты</a>
+          </div>
+          <dl class="hc-metrics">
+            <div>
+              <dt>50+</dt>
+              <dd>запущенных станций</dd>
+            </div>
+            <div>
+              <dt>до 60%</dt>
+              <dd>экономии на энергии</dd>
+            </div>
+            <div>
+              <dt>30 лет</dt>
+              <dd>гарантия на панели</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hc-hero-panel">
+          <div class="hc-badge-row">
+            <span class="hc-badge">ETL‑сертификация</span>
+            <span class="hc-badge hc-badge--soft">24/7 поддержка</span>
+          </div>
+          <h2>Быстрый предварительный расчёт</h2>
+          <p class="hc-hero-panel-text">
+            Оставьте контакты — в течение 15 минут инженер вышлет ориентировочный расчёт и
+            подберёт конфигурацию под ваш объект.
+          </p>
+          <form class="hc-mini-form" id="quickForm" novalidate>
+            <label>
+              Телефон
+              <input type="tel" name="phone" placeholder="+998 (__) ___‑__‑__" required />
+            </label>
+            <label>
+              Тип объекта
+              <select name="objectType" required>
+                <option value="">Выберите тип</option>
+                <option>Частный дом</option>
+                <option>Бизнес</option>
+                <option>Промышленный объект</option>
+              </select>
+            </label>
+            <button type="submit" class="hc-btn hc-btn--accent hc-btn--block">
+              Получить расчёт
+            </button>
+            <p class="hc-form-status" id="quickStatus" aria-live="polite"></p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section class="hc-section" id="services">
+      <div class="hc-shell">
+        <div class="hc-section-head">
+          <h2>Услуги HelioCore</h2>
+          <p>
+            Закрываем полный цикл проекта — от энергоаудита и разрешительной документации до
+            монтажа и сервисного сопровождения.
+          </p>
+        </div>
+
+        <div class="hc-grid hc-grid--3">
+          <article class="hc-card hc-card--glass">
+            <h3>Солнечные установки</h3>
+            <p>
+              Проектирование и монтаж сетевых, гибридных и автономных солнечных электростанций
+              любой мощности.
+            </p>
+            <a href="#solutions" class="hc-link">Смотреть решения</a>
+          </article>
+          <article class="hc-card hc-card--glass">
+            <h3>Энергоаудит</h3>
+            <p>
+              Подробный анализ энергопотребления с отчётом, рекомендациями и расчётом срока
+              окупаемости станции.
+            </p>
+            <a href="#process" class="hc-link">Как это работает</a>
+          </article>
+          <article class="hc-card hc-card--glass">
+            <h3>Сервис и мониторинг</h3>
+            <p>
+              Регламентное обслуживание, удалённый мониторинг выработки и оперативный выезд
+              сервисной бригады.
+            </p>
+            <a href="#benefits" class="hc-link">Преимущества сервиса</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-section hc-section--tinted" id="solutions">
+      <div class="hc-shell">
+        <div class="hc-section-head">
+          <h2>Решения под ваши задачи</h2>
+          <p>Подбираем формат станции под ваш профиль потребления и приоритеты.</p>
+        </div>
+
+        <div class="hc-grid hc-grid--3">
+          <article class="hc-card hc-card--border">
+            <span class="hc-pill">Экономия</span>
+            <h3>Сетевые ФЭС</h3>
+            <p>
+              Идеальны для объектов с доступом к городской сети. Снижайте счёт за электричество и
+              монетизируйте излишки.
+            </p>
+            <ul class="hc-list">
+              <li>Максимальная рентабельность</li>
+              <li>Минимальные капитальные вложения</li>
+              <li>Возможность продажи энергии в сеть</li>
+            </ul>
+          </article>
+
+          <article class="hc-card hc-card--border">
+            <span class="hc-pill hc-pill--accent">Автономность</span>
+            <h3>Гибридные ФЭС</h3>
+            <p>
+              Совмещают сеть и аккумуляторы. Обеспечивают работу даже при отключениях и помогают
+              сгладить пики потребления.
+            </p>
+            <ul class="hc-list">
+              <li>Резервное питание при авариях</li>
+              <li>Снижение нагрузки в пиковые часы</li>
+              <li>Гибкая конфигурация по емкости</li>
+            </ul>
+          </article>
+
+          <article class="hc-card hc-card--border">
+            <span class="hc-pill hc-pill--soft">Off‑grid</span>
+            <h3>Автономные станции</h3>
+            <p>
+              Для удалённых объектов без стабильной сети: ферм, баз, складов и инфраструктурных
+              объектов.
+            </p>
+            <ul class="hc-list">
+              <li>Полная энергонезависимость</li>
+              <li>Инженерный расчёт под круглогодичную работу</li>
+              <li>Модульное масштабирование</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-section" id="locations">
+      <div class="hc-shell">
+        <div class="hc-section-head">
+          <h2>Объекты, с которыми мы работаем</h2>
+          <p>
+            Настраиваем архитектуру станции под особенности кровли, площади и потребления на
+            каждом типе объекта.
+          </p>
+        </div>
+
+        <div class="hc-grid hc-grid--3">
+          <article class="hc-card hc-card--ghost">
+            <h3>Частные дома и коттеджи</h3>
+            <p>
+              Установка на крыше или участке. Безопасная интеграция в существующую электросеть
+              дома.
+            </p>
+            <p class="hc-tagline">Комфорт без переплат за энергоресурсы.</p>
+          </article>
+          <article class="hc-card hc-card--ghost">
+            <h3>Офисы и бизнес‑центры</h3>
+            <p>
+              Панели на кровле, над парковками или на свободной территории. Усиливают ESG‑образ
+              компании.
+            </p>
+            <p class="hc-tagline">Снижение OPEX и имидж ответственного бизнеса.</p>
+          </article>
+          <article class="hc-card hc-card--ghost">
+            <h3>Промышленные объекты</h3>
+            <p>
+              Крупные станции на промтерриториях и полях с высокой предсказуемостью
+              энергопроизводства.
+            </p>
+            <p class="hc-tagline">Мощность под ваши производственные задачи.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-section hc-section--tinted" id="benefits">
+      <div class="hc-shell">
+        <div class="hc-section-head">
+          <h2>Почему HelioCore</h2>
+          <p>Инженерный подход, лицензии и гарантия результата — без скрытых условий.</p>
+        </div>
+
+        <div class="hc-grid hc-grid--4">
+          <article class="hc-card hc-card--icon">
+            <div class="hc-icon">∞</div>
+            <h3>Бесперебойность</h3>
+            <p>Продуманная архитектура станций и резервирование на критичных объектах.</p>
+          </article>
+          <article class="hc-card hc-card--icon">
+            <div class="hc-icon">♻</div>
+            <h3>Экологичность</h3>
+            <p>Чистая генерация без выбросов, соответствие международным стандартам.</p>
+          </article>
+          <article class="hc-card hc-card--icon">
+            <div class="hc-icon">₸</div>
+            <h3>Понятная экономика</h3>
+            <p>Прозрачный расчёт окупаемости и сценариев потребления до старта проекта.</p>
+          </article>
+          <article class="hc-card hc-card--icon">
+            <div class="hc-icon">✔</div>
+            <h3>Лицензии и гарантия</h3>
+            <p>Сертифицированное оборудование и официальная гарантия до 30 лет.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-section" id="process">
+      <div class="hc-shell">
+        <div class="hc-section-head">
+          <h2>Как мы работаем</h2>
+          <p>Прозрачный процесс во всех этапах проекта.</p>
+        </div>
+
+        <ol class="hc-steps">
+          <li>
+            <h3>Заявка и первичная консультация</h3>
+            <p>Собираем вводные, анализируем профиль потребления и задачи объекта.</p>
+          </li>
+          <li>
+            <h3>Энергоаудит и проект</h3>
+            <p>Проводим аудит, формируем техническое решение и детальный расчёт.</p>
+          </li>
+          <li>
+            <h3>Монтаж и пусконаладка</h3>
+            <p>Инженерный надзор, чистый монтаж и тестирование всех режимов.</p>
+          </li>
+          <li>
+            <h3>Поддержка и мониторинг</h3>
+            <p>Обучаем персонал, включаем удалённый мониторинг и сервисный план.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="hc-section hc-section--tinted" id="projects">
+      <div class="hc-shell">
+        <div class="hc-section-head">
+          <h2>Реализованные проекты</h2>
+          <p>Подбираем решения под разные отрасли и масштабы.</p>
+        </div>
+
+        <div class="hc-grid hc-grid--3">
+          <article class="hc-card hc-card--case">
+            <header>
+              <h3>80 кВт — коммерческий объект</h3>
+              <span class="hc-badge hc-badge--soft">Бухара</span>
+            </header>
+            <p>Снижение затрат на электроэнергию на 58% и быстрый срок окупаемости.</p>
+            <p class="hc-meta">Сетевая ФЭС, интеграция с существующей сетью.</p>
+          </article>
+          <article class="hc-card hc-card--case">
+            <header>
+              <h3>25 кВт — частный дом</h3>
+              <span class="hc-badge hc-badge--soft">Ташкент</span>
+            </header>
+            <p>Полное покрытие дневного потребления, резерв на аккумуляторах ночью.</p>
+            <p class="hc-meta">Гибридная ФЭС с системой мониторинга.</p>
+          </article>
+          <article class="hc-card hc-card--case">
+            <header>
+              <h3>150 кВт — производственный комплекс</h3>
+              <span class="hc-badge hc-badge--soft">Самарканд</span>
+            </header>
+            <p>Стабилизация энергопоставки и разгрузка сети в пиковые часы.</p>
+            <p class="hc-meta">Комбинация сетевой и автономной генерации.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-section" id="faq">
+      <div class="hc-shell">
+        <div class="hc-section-head">
+          <h2>Частые вопросы</h2>
+          <p>Если не нашли ответ — оставьте заявку, инженер свяжется с вами лично.</p>
+        </div>
+
+        <div class="hc-faq">
+          <details open>
+            <summary>Какой срок окупаемости солнечной станции?</summary>
+            <p>
+              В среднем 4–7 лет в зависимости от тарифа, режима работы и выбранной конфигурации.
+              На этапе аудита показываем несколько сценариев.
+            </p>
+          </details>
+          <details>
+            <summary>Что будет при отключении городской сети?</summary>
+            <p>
+              Для объектов, чувствительных к отключениям, мы проектируем гибридные или автономные
+              системы с аккумуляторами и автоматическим переключением.
+            </p>
+          </details>
+          <details>
+            <summary>Можно ли масштабировать станцию в будущем?</summary>
+            <p>
+              Да. Закладываем возможность расширения по инверторам, панелям и аккумуляторному
+              парку ещё на этапе проекта.
+            </p>
+          </details>
+          <details>
+            <summary>Нужны ли разрешения и согласования?</summary>
+            <p>
+              Мы сопровождаем весь процесс: от согласования мощности до подключения к сетевой
+              инфраструктуре, если это требуется.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="hc-section hc-section--cta">
+      <div class="hc-shell hc-cta-inner">
+        <div class="hc-cta-text">
+          <h2>Готовы перейти на солнечную энергетику?</h2>
+          <p>
+            Оставьте контакты и кратко опишите объект — подготовим персональное предложение и
+            ориентировочный срок окупаемости.
+          </p>
+        </div>
+        <a href="#contact" class="hc-btn hc-btn--accent">Оставить заявку</a>
+      </div>
+    </section>
+
+    <section class="hc-section" id="contact">
+      <div class="hc-shell hc-contact-grid">
+        <form class="hc-form" id="contactForm" novalidate>
+          <div class="hc-form-grid">
+            <label>
+              Имя
+              <input type="text" name="name" required placeholder="Ваше имя" />
+            </label>
+            <label>
+              Город
+              <select name="city">
+                <option value="">Выберите город</option>
+                <option>Ташкент</option>
+                <option>Самарканд</option>
+                <option>Бухара</option>
+                <option>Фергана</option>
+                <option>Андижан</option>
+                <option>Наманган</option>
+                <option>Карши</option>
+                <option>Термез</option>
+                <option>Ургенч</option>
+                <option>Нукус</option>
+                <option>Навои</option>
+                <option>Джизак</option>
+                <option>Гулистан</option>
+              </select>
+            </label>
+            <label>
+              Номер телефона
+              <input type="tel" name="phone" required placeholder="+998 (__) ___‑__‑__" />
+            </label>
+            <label>
+              Тип объекта
+              <select name="objectType" required>
+                <option value="">Выберите тип</option>
+                <option>Частный дом</option>
+                <option>Бизнес</option>
+                <option>Промышленность</option>
+                <option>Сельское хозяйство</option>
+              </select>
+            </label>
+          </div>
+          <button type="submit" class="hc-btn hc-btn--primary hc-btn--block">
+            Отправить заявку
+          </button>
+        </form>
+
+        <div class="hc-contact-info">
+          <h2>Контакты HelioCore</h2>
+          <p>
+            Работаем по всему Узбекистану. Инженеры выезжают на объект для аудита и обследования
+            площадки.
+          </p>
+          <ul class="hc-contact-list">
+            <li><span>Телефон:</span> +998 99 999 99 99</li>
+            <li><span>Email:</span> info@info.energy</li>
+            <li><span>Адрес:</span> Самарканд</li>
+          </ul>
+          <p class="hc-muted">
+            Для бизнеса и оптовых поставок действуют специальные условия сотрудничества.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <p class="hc-form-status" id="formStatus" aria-live="polite"></p>
+
+  <footer class="hc-footer">
+    <div class="hc-shell hc-footer-inner">
+      <div>
+        <p class="hc-logo hc-logo--small">HelioCore</p>
+        <p class="hc-muted">
+          Премиальные солнечные решения для дома, бизнеса и промышленности. Инженерная точность,
+          прозрачная экономика и сервис.
+        </p>
+      </div>
+      <div class="hc-footer-meta">
+        <p>© 2026 HelioCore Energy. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
